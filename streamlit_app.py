@@ -15,7 +15,7 @@ st.write(
     "Provinsi Jawa Timur."
 )
 
-map_path = Path("peta_folium.html")
+map_path = Path("index.html")
 
 if map_path.exists():
     html = map_path.read_text(encoding="utf-8")
@@ -26,6 +26,6 @@ if map_path.exists():
     )
 else:
     st.error(
-        "File peta_folium.html tidak ditemukan. "
+        "File index.html tidak ditemukan. "
         "Pastikan file tersedia di direktori utama repositori."
     )
